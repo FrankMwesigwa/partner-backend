@@ -1,0 +1,28 @@
+{
+  "name": "partner-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon --exec babel-node index.js",
+    "start:pm2": "pm2 start npm --name mediator -- server"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
